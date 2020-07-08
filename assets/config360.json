@@ -1,6 +1,7 @@
 {
     "type": "equirectangular",
-    "panorama": "/assets/360/portada.jpg",
+    "panorama": "/assets/image/portada.jpg",
+    "preview": "",
     "compass": false,
     "northOffset": 247.5,
     "autoRotate":-3,
