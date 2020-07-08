@@ -15,6 +15,9 @@ body{
 }
 .container-fluid img{
     width: 100%;
+    margin-bottom: 12px;
+    border-bottom: dashed #5b9676;
+    border-top: dashed #5e6367;
 }
 
 .pnlm-controls-container{
