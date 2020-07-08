@@ -10,6 +10,12 @@ body{
     height: 80vh;
 }
 
+.container {
+    max-width: 650px;
+}
+.container-fluid img{
+    width: 100%;
+}
 
 .pnlm-controls-container{
     /*display: none !important;
