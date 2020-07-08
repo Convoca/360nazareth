@@ -46,7 +46,7 @@ body{
 .i360{
     position: absolute;
     z-index: 3;
-    left: calc( 50% - 62px );
+    left: calc( 50% - 33px );
     bottom: 50px;
 }
 
@@ -176,4 +176,156 @@ h1 .gris{
     padding: 0px;
     margin: 0px;
     display: none;
+}
+
+
+
+
+.modal-content .close{
+    color: #838382;
+}
+.modal-content{
+    color: #838382;
+    border-radius: 17px;
+    background-color: #ffffffd6;
+}
+.modal-header{
+    padding-bottom: 0px;
+    border: none;
+}
+.modal-body{
+    padding-top: 0px;
+    color: black;
+    margin-top: -10px;
+    font-weight: 600;
+    font-style: normal;
+}
+.modal-body h5{
+    font-size:37px;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.modal-body span{
+    font-weight: 400;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 70%;
+        margin: 1.75rem auto;
+    }
+}
+
+/*mobile*/
+@media (max-width: 576px){
+    .desktop{
+        display: none;
+    }
+    #panorama, #panoramavideo {
+        width: 100%;
+        height: 70vh;
+    }
+    .container img, .modal-header img {
+        max-width: 80%;
+    }
+    h1{
+        font-size: 2.9em;  
+    }
+    .logo{
+        top: 5px;
+    }
+    .i360{
+        bottom: 5px;
+    }
+
+    .sitios.mobile, .galeria.mobile, .audio.mobile{
+        display: block;
+        top: 120px;
+        left: 0px;
+        display: inline-table;
+        padding-left: 0px;
+        padding-right: 5px;       
+    }
+    .sitios.mobile img, .sitios-over.mobile img{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    .sitios-over.mobile{
+        display: none;
+        top: 120px;
+        left: 0px;
+        padding-left: 0px;
+        padding-right: 5px;       
+    }
+    .sitios-over.mobile .close{
+        float: left;
+        padding-left: 0px;
+    }
+
+    .galeria.mobile{
+        top: 200px;
+    }
+    .audio.mobile{
+        top: 160px;
+    }
+
+    .nota{
+        background-image: url(/assets/images/fondo.png);
+        background-repeat: no-repeat;
+        background-position: 92% -50px;
+        background-size: 30px;
+    }
+
+    .closegalleria img{
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .modal-header {
+        padding-bottom: 10px;
+    }
+
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

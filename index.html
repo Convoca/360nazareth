@@ -37,8 +37,8 @@
 <body onload="onLoadComplete()">
 
     <div id="panorama">
-        <video id="panoramavideo" class="video-js vjs-default-skin vjs-big-play-centered" controls loop="true" preload="true"
-            poster="assets/images/preview_video.jpg" crossorigin="anonymous" style="display: none;">
+        <video id="panoramavideo" class="video-js vjs-default-skin vjs-big-play-centered" controls loop="true"
+            preload="true" poster="assets/images/preview_video.jpg" crossorigin="anonymous" style="display: none;">
             <source src="assets/360/colegio.mp4" type="video/mp4" />
             <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to
@@ -57,15 +57,15 @@
 
         <div class="menu-over">
             <a class="close" href="#"><img src="assets/images/menu-over.png" />&nbsp;&nbsp;</a>
-            <a href="#">Cómo se hizo</a> |
-            <a href="#">Equipo</a>
+            <a href="#" data-toggle="modal" data-target="#comoModal">Cómo se hizo</a> |
+            <a href="#" data-toggle="modal" data-target="#equipoModal">Equipo</a> 
             &nbsp;&nbsp;
         </div>
 
-        <a href="#" class="sitios">
+        <a href="#" class="sitios desktop">
             RECORRIDO 360 <img src="assets/images/sitios.png" />
         </a>
-        <div class="sitios-over">
+        <div class="sitios-over desktop">
             &nbsp;&nbsp;
             <a href="javascript:showPannellum('rio')">El río</a> |
             <a href="javascript:showPannellum('quebrada')">El oleoducto</a> |
@@ -74,11 +74,31 @@
             <a class="close" href="#"><img src="assets/images/sitios-over.png" /></a>
         </div>
 
-        <a href="#" class="audio">
+        <a href="#" class="audio desktop">
             SONIDO <img src="assets/images/audio.png" />
         </a>
-        <a href="#" data-toggle="modal" data-target="#exampleModal" class="galeria">
+        <a href="#" data-toggle="modal" data-target="#exampleModal" class="galeria desktop">
             FOTOS <img src="assets/images/galeria.png" />
+        </a>
+
+        <a href="#" class="sitios mobile">
+            <img src="assets/images/sitios.png" /> RECORRIDO 360 
+        </a>
+        <div class="sitios-over mobile">
+            <a class="close" href="#"><img src="assets/images/sitios-over.png" /></a>
+
+            <a href="javascript:showPannellum('rio')">El río</a> |
+            <a href="javascript:showPannellum('quebrada')">El oleoducto</a> |
+            <a href="javascript:showPannellum('gente')">La gente</a> |
+            <a href="javascript:showPannellum('colegio')">El colegio</a>
+            
+        </div>
+
+        <a href="#" class="audio mobile">
+             <img src="assets/images/audio.png" /> SONIDO
+        </a>
+        <a href="#" data-toggle="modal" data-target="#exampleModal" class="galeria mobile">
+             <img src="assets/images/galeria.png" /> FOTOS
         </a>
 
         <div class="leyenda">
@@ -99,9 +119,9 @@
     </div>
     <section style="width: 100%; height: 1250px;" class="nota">
         <div class="container">
-            <br><br>
+            <br>
             <img src="assets/images/separador1.png" />
-            <br><br>
+            <br>
             <h1>
                 <span class="verde">NAZARETH,</span><br>
                 <span class="gris">OLVIDADA</span><br>
@@ -124,6 +144,77 @@
     <a href="#" class="closegalleria">
         <img src="assets/images/close.png" />
     </a>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="comoModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="assets/images/separador1.png" />
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Como se hizo</h5>
+                    Un equipo de Convoca.pe llegó hasta la comunidad awajún de Nazareth en la región Amazonas, luego de 7 horas de viaje que implicó un vuelo de Lima a Jaén (Cajamarca), un taxi de Jaén hasta Bagua, un viaje en colectivo de Bagua a Chiriaco y desde este último punto una mototaxi hasta Nazareth. El centro de operaciones para nosotros fue Chiriaco, lugar donde podíamos descansar y recargar nuestros equipos, pero también porque este distrito cuenta con los principales servicios que para alguien que vive en Lima podrían considerarse básicos como buena señal de internet, restaurantes y al menos una agencia de banco.
+                    <br><br>
+                    La idea de hacer un registro fotográfico y de video en 360 nació a partir de la búsqueda de formatos que permitieran al lector vivir una experiencia audiovisual más inmersiva en la que pueda conocer de manera más cercana un lugar tan alejado como lo es Nazareth y por lo tanto las historias que sus pobladores cuentan.
+                    <br><br>
+                    Pero, ¿por qué Nazareth? En el 2019, gracias al trabajo conjunto de varias organizaciones civiles, diferentes líderes de comunidades y representantes de regiones se unieron para crear la plataforma de personas afectadas por metales pesados y otras sustancias químicas, hombres y mujeres de diferentes partes del Perú se organizaron en una sola fuerza para hacer llegar un solo pedido básico al Estado: atención especializada para sus hijos, hijas, hermanos, padres y vecinos que vivían en un entorno contaminado por la actividades industriales, de minería y de extracción de hidrocarburos que les habían afectado directamente en la salud.
+                    <br><br>
+                    Aunque todos los casos son igual de importantes que atender porque se trata de la vida de peruanas y peruanos, una serie de factores se consideraron para escoger a Nazareth y fue sobre todo la ubicación, ya que son las regiones de la amazonía las más olvidadas por su difícil acceso y la apertura de sus líderes que en algunas oportunidades estuvieron en Lima para exponer su caso y siempre tenían la disposición de explicar con paciencia y serenidad lo que estaba pasando en sus comunidades.
+                    <br><br>
+                    Es así que con dos laptops, una cámara fotográfica, una cámara 360 y un trípode, nos embarcamos en esta ruta desconocida que pudimos planificar y proyectar con el apoyo incansable de personas como Eliseo Mashigkash, viceapu de Nazareth, una persona con una infinita paciencia; Edinson Taijin, un joven de Nazareth que nos ayudó a ubicarnos en su comunidad y conocer los puntos más importantes, así como visitar casa por casa para recoger testimonios de personas que habían participado del recojo de petróleo en el 2016. Pero no solo eso, sino también nos ayudó con la traducción ya que algunas personas se sentían más cómodas al hablar su propia lengua que es el awajún. 
+                    <br><br>
+                    Aunque la reportería seguía siendo la tradicional, de ir puerta por puerta recogiendo testimonios, haciendo apuntes, grabando en audio o video y hacer las preguntas necesarias para contar una historia; también había que planificar los momentos en los que se podía grabar o tomar fotos en 360, un plan que se preparaba un día antes sabiendo la agenda del día, aunque también muchas decisiones se tomaban en el momento porque cada día íbamos a un lugar o espacio nuevo y no necesariamente volvíamos.
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="equipoModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="assets/images/separador1.png" />
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Equipo</h5>
+                    Coordinadora general:<br> 
+                    <span>
+                        Salazar Herrera.
+                    </span> 
+                    <br>
+                    Editor del reportaje: <br> 
+                    <span>
+                        Ghiovani Hinojosa.
+                    </span>
+                    <br>
+                    Reportería y fotografía:  <br> 
+                    <span> Jackeline Cárdenas Ipenza.
+                    </span>
+                    <br>
+                    Fotografías y videos 360: <br> 
+                    <span> Elvis Rivera.
+                    </span>
+                    <br>
+                    Desarrollo web: <br> 
+                    <span> Elvis Rivera.
+                    </span>
+                    <br>
+                    Desarrollo web:  <br> 
+                    <span>Iván Palomino.
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

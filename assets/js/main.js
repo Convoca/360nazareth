@@ -24,24 +24,51 @@ var onLoadComplete = function () {
         $(".menu").fadeIn();
     });
 
-    $(".sitios").click(function () {
-        $(".sitios").fadeOut("fast");
-        $(".sitios-over").fadeIn();
+    $(".sitios.desktop").click(function () {
+        $(".sitios.desktop").fadeOut("fast");
+        $(".sitios-over.desktop").fadeIn();
+    });
+    $(".sitios.mobile").click(function () {
+        $(".sitios.mobile").fadeOut("fast");
+        $(".sitios-over.mobile").fadeIn();
     });
 
-    $(".sitios-over .close").click(function () {
-        $(".sitios-over").fadeOut("fast");
-        $(".sitios").fadeIn();
+    $(".sitios-over.desktop .close").click(function () {
+        $(".sitios-over.desktop").fadeOut("fast");
+        $(".sitios.desktop").fadeIn();
+    });
+
+    $(".sitios-over.mobile .close").click(function () {
+        $(".sitios-over.mobile").fadeOut("fast");
+        $(".sitios.mobile").fadeIn();
     });
 
     $(".galeria").click(function () {
         $(".closegalleria").fadeIn();
         var data = [
             {
-                image: 'assets/images/preview.jpg'
+                image: 'assets/galeria/primera_vista.jpg'
             },
             {
-                image: 'https://convoca.pe/sites/default/files/2020-07/106%20di%CC%81as%20-%20ya.png'
+                image: 'assets/galeria/IMG_6157.jpg'
+            },
+            {
+                image: 'assets/galeria/primera_vista.jpg'
+            },
+            {
+                image: 'assets/galeria/IMG_6157.jpg'
+            },
+            {
+                image: 'assets/galeria/primera_vista.jpg'
+            },
+            {
+                image: 'assets/galeria/IMG_6157.jpg'
+            },
+            {
+                image: 'assets/galeria/primera_vista.jpg'
+            },
+            {
+                image: 'assets/galeria/IMG_6157.jpg'
             }
         ];
 
