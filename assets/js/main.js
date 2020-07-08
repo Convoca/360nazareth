@@ -47,32 +47,42 @@ var onLoadComplete = function () {
         $(".closegalleria").fadeIn();
         var data = [
             {
-                image: 'assets/galeria/primera_vista.jpg'
+                image: 'assets/galeria/1.jpg'
             },
             {
-                image: 'assets/galeria/IMG_6157.jpg'
+                image: 'assets/galeria/2.jpg'
+            }, {
+                image: 'assets/galeria/3.jpg'
+            }, {
+                image: 'assets/galeria/4.jpg'
+            }, {
+                image: 'assets/galeria/5.jpg'
+            }, {
+                image: 'assets/galeria/6.jpg'
+            }, {
+                image: 'assets/galeria/7.jpg'
+            }, {
+                image: 'assets/galeria/8.jpg'
+            }, {
+                image: 'assets/galeria/9.jpg'
+            }, {
+                image: 'assets/galeria/10.jpg'
+            }, {
+                image: 'assets/galeria/11.jpg'
+            }, {
+                image: 'assets/galeria/12.jpg'
+            }, {
+                image: 'assets/galeria/13.jpg'
+            }, {
+                image: 'assets/galeria/14.jpg'
+            }, {
+                image: 'assets/galeria/15.jpg'
+            }, {
+                image: 'assets/galeria/16.jpg'
             },
-            {
-                image: 'assets/galeria/primera_vista.jpg'
-            },
-            {
-                image: 'assets/galeria/IMG_6157.jpg'
-            },
-            {
-                image: 'assets/galeria/primera_vista.jpg'
-            },
-            {
-                image: 'assets/galeria/IMG_6157.jpg'
-            },
-            {
-                image: 'assets/galeria/primera_vista.jpg'
-            },
-            {
-                image: 'assets/galeria/IMG_6157.jpg'
-            }
         ];
 
-        
+
         Galleria.loadTheme('assets/galleria/themes/fullscreen/galleria.fullscreen.js');
         Galleria.run('.galleria',
             {
@@ -84,28 +94,28 @@ var onLoadComplete = function () {
                 dataSource: data
             });
     });
-    $(".closegalleria").click(function(){
+    $(".closegalleria").click(function () {
         $(".closegalleria").hide();
         $(".galleria-container").remove();
-        $("body").css("overflow","auto");
+        $("body").css("overflow", "auto");
     });
 
-    
+
     myAudio = new Audio();
     myAudio.src = "assets/audio/fondo.mp3"
     myAudio.loop = true;
 
-    $("body").mouseover(function(){
-        if(myAudio.paused) myAudio.play();
+    $("body").mouseover(function () {
+        if (myAudio.paused) myAudio.play();
     });
 
-    $(".audio").click(function(){
-        if(myAudio.volume==0){
-            myAudio.volume=1;
-        }else{
-            myAudio.volume=0;
+    $(".audio").click(function () {
+        if (myAudio.volume == 0) {
+            myAudio.volume = 1;
+        } else {
+            myAudio.volume = 0;
         }
-       
+
     });
 
 }
@@ -114,13 +124,13 @@ var onLoadComplete = function () {
 function showPannellum(image) {
     $(".video-js").hide();
 
-    if(image=="rio") $('.leyenda').html("Las aguas del Chiriaco se contaminaron de petróleo el 2016. Hoy están limpias.");
-    if(image=="quebrada") $('.leyenda').html("En esta zona de la quebrada Inayo se quebró el ducto de Petroperú.");
-    if(image=="gente") $('.leyenda').html("Algunos habitantes de Nazareth recogieron el crudo con sus propias manos.");
-    
-    
+    if (image == "rio") $('.leyenda').html("Las aguas del Chiriaco se contaminaron de petróleo el 2016. Hoy están limpias.");
+    if (image == "quebrada") $('.leyenda').html("En esta zona de la quebrada Inayo se quebró el ducto de Petroperú.");
+    if (image == "gente") $('.leyenda').html("Algunos habitantes de Nazareth recogieron el crudo con sus propias manos.");
 
-    if(image!="colegio"){
+
+
+    if (image != "colegio") {
         pannellum.viewer('panorama', {
             "type": "equirectangular",
             "panorama": "assets/360/" + image + ".jpg",
@@ -128,11 +138,11 @@ function showPannellum(image) {
             "autoLoad": true,
             "ignoreGPanoXMP": true,
             "showZoomCtrl": false,
-            "yaw":-110,
+            "yaw": -110,
         }).startAutoRotate();
         myPlayer.pause();
-    }else{
-        myPlayer=videojs('panoramavideo', {
+    } else {
+        myPlayer = videojs('panoramavideo', {
             plugins: {
                 controls: false,
                 autoplay: true,
