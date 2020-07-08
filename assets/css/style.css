@@ -47,12 +47,16 @@ body{
     top: 80px;
     left: 0px;
     z-index: 2;
-    color: #fff;
+    color: #fff !important;
     background-color: #00000099;
     padding-right: 5px;
 }
 .menu-over .close{
     float: left;
+}
+.menu a{
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 .sitios, .sitios-over{
