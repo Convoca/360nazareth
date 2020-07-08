@@ -1,7 +1,7 @@
 body{
  font-family: Roboto;
  overflow-x: hidden;
- color: #838382;
+ color: #171717;
  margin: 0;
 }
 
@@ -145,6 +145,7 @@ h1 .gris{
     color: #5E6367;
 }
 .bajada{
+    color: #838382;
     margin-top: 20px;
     text-align: justify;
 }
@@ -274,6 +275,9 @@ h1 .gris{
     .audio.mobile{
         top: 160px;
     }
+    .leyenda{
+        bottom: 50px;
+    }
 
     .nota{
         background-image: url(/assets/images/fondo.png);
@@ -329,3 +333,11 @@ h1 .gris{
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+ }
