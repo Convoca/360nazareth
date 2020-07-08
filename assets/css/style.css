@@ -91,7 +91,7 @@ body{
 }
 
 .nota{
-    background-image: url(/assets/images/fondo.png), url(/assets/images/fondo.png) ;
+    background-image: url("/assets/images/fondo.png"), url("/assets/images/fondo.png") ;
     background-repeat: repeat-y, repeat-y;
     background-position: 5% 0%, 95% 0%  ;
 }
