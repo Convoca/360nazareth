@@ -13,7 +13,7 @@ body{
 .container {
     max-width: 650px;
 }
-.container-fluid img{
+.nota .container-fluid img{
     width: 100%;
     margin-bottom: 12px;
     border-bottom: dashed #5b9676;
@@ -27,24 +27,7 @@ body{
  
 
 
-.btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    border-radius: 35px;
-    font-size: 24px;
-    line-height: 1.33;
-}
 
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
-}
 
 .logo{
     position: absolute;
@@ -164,15 +147,15 @@ h1 .gris{
 
 .closegalleria{
     position: fixed;
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
     z-index: 10001;
     color: #fff;
     display: none;
 }
 .closegalleria img{
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
 }
 
 #galeriaiframe {
@@ -233,7 +216,7 @@ h1 .gris{
 }
 
 
-.container-fluid {
+.nota .container-fluid {
     padding-right:0;
     padding-left:0;
     margin-right:auto;
@@ -241,11 +224,24 @@ h1 .gris{
     text-align: center;
     position: relative;
  }
- .container-fluid audio{
+ .nota .container-fluid audio{
      position: absolute;
      right: 15px;
      bottom: 50px;
  }
+
+ .rounded-icon.white {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*mobile*/
 @media (max-width: 576px){
@@ -324,6 +320,17 @@ h1 .gris{
         bottom: 25px;
         height: 30px;
     }
+}
+
+footer{
+    color: #fff;
+    background-color: #494B48;
+}
+footer .creditos{
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    padding-bottom: 0px;
 }
 
 
