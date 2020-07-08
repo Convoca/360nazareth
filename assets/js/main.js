@@ -31,7 +31,35 @@ var onLoadComplete = function () {
         $(".sitios-over").fadeOut("fast");
         $(".sitios").fadeIn();
     });
-    
+
+    $(".galeria").click(function () {
+        $(".closegalleria").fadeIn();
+        var data = [
+            {
+                image: 'assets/images/preview.jpg'
+            },
+            {
+                image: 'https://convoca.pe/sites/default/files/2020-07/106%20di%CC%81as%20-%20ya.png'
+            }
+        ];
+
+        
+        Galleria.loadTheme('assets/galleria/themes/fullscreen/galleria.fullscreen.js');
+        Galleria.run('.galleria',
+            {
+                _hideDock: false,
+                transition: "pulse",
+                imageCrop: true,
+                thumbCrop: "height",
+                easing: "galleriaOut",
+                dataSource: data
+            });
+    });
+    $(".closegalleria").click(function(){
+        $(".closegalleria").hide();
+        $(".galleria-container").remove();
+        $("body").css("overflow","auto");
+    });
 }
 
 // function show pannellum

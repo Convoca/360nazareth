@@ -2,6 +2,7 @@ body{
  font-family: Roboto;
  overflow-x: hidden;
  color: #838382;
+ margin: 0;
 }
 
 #panorama {
@@ -119,4 +120,33 @@ h1 .gris{
 .bajada{
     margin-top: 20px;
     text-align: justify;
+}
+
+
+
+
+.closegalleria{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 10001;
+    color: #fff;
+    display: none;
+}
+.closegalleria img{
+    width: 64px;
+    height: 64px;
+}
+
+#galeriaiframe {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 1005;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: none;
 }
