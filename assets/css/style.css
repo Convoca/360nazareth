@@ -1,6 +1,7 @@
 body{
  font-family: Roboto;
  overflow-x: hidden;
+ color: #838382;
 }
 
 #panorama {
@@ -87,4 +88,35 @@ body{
     right: 0px;
     z-index: 2;
     color: #fff;
+}
+
+.nota{
+    background-image: url(/assets/images/fondo.png), url(/assets/images/fondo.png) ;
+    background-repeat: repeat-y, repeat-y;
+    background-position: 5% 0%, 95% 0%  ;
+}
+
+
+
+.contenido {
+    width: 70%;
+    margin: auto;
+}
+
+h1{
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5em;
+    line-height: 0.8em;
+}
+h1 .verde{
+    color: #5B9676;
+}
+h1 .gris{
+    color: #5E6367;
+}
+.bajada{
+    margin-top: 20px;
+    text-align: justify;
 }
