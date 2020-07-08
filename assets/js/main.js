@@ -47,38 +47,54 @@ var onLoadComplete = function () {
         $(".closegalleria").fadeIn();
         var data = [
             {
-                image: 'assets/galeria/1.jpg'
+                image: 'assets/galeria/1.jpg',
+                thumb: 'assets/galeria/previo/1.jpg'
             },
             {
-                image: 'assets/galeria/2.jpg'
+                image: 'assets/galeria/2.jpg',
+                thumb: 'assets/galeria/previo/2.jpg'
             }, {
-                image: 'assets/galeria/3.jpg'
+                image: 'assets/galeria/3.jpg',
+                thumb: 'assets/galeria/previo/3.jpg'
             }, {
-                image: 'assets/galeria/4.jpg'
+                image: 'assets/galeria/4.jpg',
+                thumb: 'assets/galeria/previo/4.jpg'
             }, {
-                image: 'assets/galeria/5.jpg'
+                image: 'assets/galeria/5.jpg',
+                thumb: 'assets/galeria/previo/5.jpg'
             }, {
-                image: 'assets/galeria/6.jpg'
+                image: 'assets/galeria/6.jpg',
+                thumb: 'assets/galeria/previo/6.jpg'
             }, {
-                image: 'assets/galeria/7.jpg'
+                image: 'assets/galeria/7.jpg',
+                thumb: 'assets/galeria/previo/7.jpg'
             }, {
-                image: 'assets/galeria/8.jpg'
+                image: 'assets/galeria/8.jpg',
+                thumb: 'assets/galeria/previo/8.jpg'
             }, {
-                image: 'assets/galeria/9.jpg'
+                image: 'assets/galeria/9.jpg',
+                thumb: 'assets/galeria/previo/9.jpg'
             }, {
-                image: 'assets/galeria/10.jpg'
+                image: 'assets/galeria/10.jpg',
+                thumb: 'assets/galeria/previo/10.jpg'
             }, {
-                image: 'assets/galeria/11.jpg'
+                image: 'assets/galeria/11.jpg',
+                thumb: 'assets/galeria/previo/11.jpg'
             }, {
-                image: 'assets/galeria/12.jpg'
+                image: 'assets/galeria/12.jpg',
+                thumb: 'assets/galeria/previo/12.jpg'
             }, {
-                image: 'assets/galeria/13.jpg'
+                image: 'assets/galeria/13.jpg',
+                thumb: 'assets/galeria/previo/13.jpg'
             }, {
-                image: 'assets/galeria/14.jpg'
+                image: 'assets/galeria/14.jpg',
+                thumb: 'assets/galeria/previo/14.jpg'
             }, {
-                image: 'assets/galeria/15.jpg'
+                image: 'assets/galeria/15.jpg',
+                thumb: 'assets/galeria/previo/15.jpg'
             }, {
-                image: 'assets/galeria/16.jpg'
+                image: 'assets/galeria/16.jpg',
+                thumb: 'assets/galeria/previo/16.jpg'
             },
         ];
 
