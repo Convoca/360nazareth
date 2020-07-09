@@ -20,7 +20,12 @@ body{
     border-bottom: dashed #5b9676;
     border-top: dashed #5e6367;
 }
-
+.nota .container-fluid iframe{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
 .pnlm-controls-container{
     /*display: none !important;
     */
@@ -327,6 +332,9 @@ h1 .gris{
     .container-fluid audio{
         bottom: 25px;
         height: 30px;
+    }
+    iframe.mobile{
+        display: block;
     }
 }
 
