@@ -15,11 +15,16 @@ body{
 }
 .nota .container-fluid img{
     width: 100%;
-    margin-bottom: 40px;
     margin-top: 25px;
     border-bottom: dashed #5b9676;
     border-top: dashed #5e6367;
 }
+.nota .container-fluid p{
+   font-size: 13px;
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+
 .nota .container-fluid iframe{
     width: 100%;
     margin: auto;
@@ -330,7 +335,7 @@ h1 .gris{
     }
 
     .container-fluid audio{
-        bottom: 25px;
+        bottom: 90px !important;
         height: 30px;
     }
     iframe.mobile{
