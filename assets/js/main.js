@@ -104,7 +104,7 @@ var onLoadComplete = function () {
             {
                 _hideDock: false,
                 transition: "pulse",
-                imageCrop: true,
+                imageCrop: false,
                 thumbCrop: "height",
                 easing: "galleriaOut",
                 dataSource: data
